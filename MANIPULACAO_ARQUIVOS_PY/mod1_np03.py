@@ -17,14 +17,14 @@ def main():
     print("Arquivo original criado. Agora vamos manipular os dados.")
     dados_modificados = []
     # Abre o arquivo em modo de leitura
-    with open('meu_arquivo.txt', 'r') as arquivo:
+    with open('frases.txt', 'r') as arquivo:
         # Lê cada linha do arquivo
         for linha in arquivo:
             # Remove espaços em branco e converte para maiúsculas
             dados_modificados.append(linha.strip().upper())
     
     # Abre o arquivo em modo de escrita
-    with open('meu_arquivo.txt', 'w') as arquivo:
+    with open('frases.txt', 'w') as arquivo:
         # Escreve cada linha modificada no arquivo
         for linha in dados_modificados:
             arquivo.write(linha + '\n')
